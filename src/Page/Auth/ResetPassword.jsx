@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import Button from '../../components/Button'
 import Navbar from '../../components/Navbar'
 import Password from '../../components/Password'
 
 const ResetPassword = () => {
 
-    const navigate = useNavigate()
     const [show, setShow] = useState(false)
 
   return (
