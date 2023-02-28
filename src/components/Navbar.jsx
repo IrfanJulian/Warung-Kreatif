@@ -32,10 +32,11 @@ const Navbar = () => {
           }
         </button>
       </div>
+      { token ? 
       <div className={`wrapper fixed top-[85px] grid duration-500 transition-all w-screen bg-gradient-to-r from-emerald-400 rounded-bl-xl rounded-br-xl to-[#016b3f] py-6 px-4 ${show === true ? '-mt-5 opacity-100' : "-mt-[500px] opacity-0"}`}>
-        <button className='text-white w-1/4 mx-auto'>Beranda</button>
+        <button onClick={()=>navigate('/')} className='text-white w-1/4 mx-auto'>Beranda</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
-        <button className='text-white w-max mx-auto'>Penawaran</button>
+        <button onClick={()=>navigate('/')} className='text-white w-max mx-auto'>Penawaran</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
         <button className='text-white w-max mx-auto'>Promo</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
@@ -43,6 +44,16 @@ const Navbar = () => {
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
         <button className='text-white w-max mx-auto'>Tentang Kami</button>
       </div>
+      :
+      <div className={`wrapper fixed top-[85px] grid duration-500 transition-all w-screen bg-gradient-to-r from-emerald-400 rounded-bl-xl rounded-br-xl to-[#016b3f] py-6 px-4 ${show === true ? '-mt-5 opacity-100' : "-mt-[500px] opacity-0"}`}>
+        <button onClick={()=>navigate('/regiser')} className='text-white w-1/4 mx-auto'>Register</button>
+        <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
+        <button onClick={()=>navigate('/login')} className='text-white w-max mx-auto'>Login</button>
+        <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
+        <button onClick={()=>navigate('/')} className='text-white w-max mx-auto'>Beranda</button>
+        <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
+      </div>
+      }
     </div>
   )
 }
