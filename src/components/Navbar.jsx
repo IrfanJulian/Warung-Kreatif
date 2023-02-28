@@ -18,7 +18,7 @@ const Navbar = () => {
             <button className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Paket Saya</button>
             <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Kontak</button>
             <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Tentang Kami</button>
-            <button onClick={()=>{localStorage.clearItem(); navigate('/login')}} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Keluar</button>
+            <button onClick={()=>{localStorage.clear(); navigate('/login')}} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Keluar</button>
           </div>
           :
           <div className="hidden md:flex w-full">
