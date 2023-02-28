@@ -4,6 +4,7 @@ import Logo from './Logo'
 
 const Navbar = () => {
 
+  const token = localStorage.getItem('token')
   const navigate = useNavigate()
   const [show, setShow] = useState(false)
 
