@@ -1,21 +1,13 @@
 import React from 'react'
-import logo from '../assets/warung kreatif.jpg'
-// import email from '../assets/email.jpg'
-// import fb from '../assets/facebook.jpg'
-// import instagram from '../assets/instagram.jpg'
-// import linkedin from '../assets/linkedin.jpg'
-// import wa from '../assets/whatsapp.jpg'
-// import phone from '../assets/phone.jpg'
-// import pin from '../assets/pin.jpg'
-// import { Link } from 'react-router-dom'
+import logo from '../assets/w2.png'
 
 const Footer = () => {
   return (
-    <div className='bg-gradient-to-r from-emerald-400 to-[#016b3f] py-3 md:py-5'>
+    <div className='bg-gradient-to-r from-emerald-400 to-[#016b3f] py-2'>
     {/* <div className='bg-gradient-to-r from-emerald-400 to-[#016b3f] py-10'> */}
         <div className="container grid w-3/4 md:flex md:w-max mx-auto">
-            <img src={logo} alt="" className='w-[8.5rem] mb-3 mx-auto rounded-xl' />
-            <p className='text-md md:text-lg text-white my-auto ml-5 text-center'>Copyright © 2023 Warung Kreatif. All Rights Reserved</p>
+            <img src={logo} alt="" className='w-[3.5rem] border-2 mb-2 border-white p-1 mx-auto' />
+            <p className='text-sm md:text-lg text-white my-auto ml-5 text-center'>Copyright © 2023 Warung Kreatif. All Rights Reserved</p>
         </div>
     </div>
   )

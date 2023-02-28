@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Password = ({ width, show, onClick, tittle, placeholder }) => {
+const Password = ({ name, width, show, onClick, tittle, placeholder, onChange }) => {
   return (
     <div className={width}>
         <p className='text-[#016b3f] text-sm md:text-lg'>{tittle}</p>
         <div className="flex">
-            <input type={show === false ? 'text' : 'password'} placeholder={placeholder} className='text-[#016b3f] w-full text-sm md:text-lg border-l-2 border-t-2 border-b-2 py-2 px-4 rounded-tl-md rounded-bl-md outline-none mx-auto' />
+            <input name={name} onChange={onChange} type={show === true ? 'text' : 'password'} placeholder={placeholder} className='text-[#016b3f] w-full text-sm md:text-lg border-l-2 border-t-2 border-b-2 py-2 px-4 rounded-tl-md rounded-bl-md outline-none mx-auto' />
             <button onClick={onClick} className='border-r-2 border-t-2 border-b-2 px-2 md:px-3 rounded-tr-md rounded-br-md'>
                 { show === true ?
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-[#016b3f]">

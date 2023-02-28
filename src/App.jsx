@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/otp' element={<Otp />} />
+          <Route path='/otp/:email' element={<Otp />} />
           <Route path='/otp-forgot-password' element={<OtpForgotPassword />} />
           <Route path='/reset-password' element={<ResetPassword />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />

@@ -10,7 +10,7 @@ const ResetPassword = () => {
   return (
     <div className='bg-gray-100 h-screen pb-10 w-full'>
       <Navbar />
-      <div className="container mx-auto grid">
+      <div className="container mx-auto grid pt-10 md:pt-32">
           <div className="wrapper w-10/12 md:w-1/2 py-10 mx-auto p-5 bg-white rounded-xl mt-14 shadow-xl my-auto">
               <p className='text-2xl md:text-3xl text-[#016b3f] font-semibold underline text-center'>Reset Password</p>
               <p className='text-md md:text-xl text-[#016b3f] font-medium text-center my-5'>Reset password anda</p>

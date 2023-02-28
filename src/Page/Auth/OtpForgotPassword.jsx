@@ -7,7 +7,7 @@ const OtpForgotPassword = () => {
   return (
     <div className='bg-gray-100 pb-10 h-screen w-screen'>
         <Navbar />
-        <div className="container mx-auto md:pt-10 grid">
+        <div className="container mx-auto pt-20 md:pt-32 grid">
             <div className="wrapper w-10/12 md:w-1/2 py-10 mx-auto p-5 bg-white rounded-xl mt-14 shadow-xl my-auto">
                 <p className='text-2xl md:text-3xl text-[#016b3f] font-semibold underline text-center'>Validasi OTP</p>
                 <p className='text-md md:text-xl text-[#016b3f] font-medium text-center my-5'>Masukan kode OTP untuk mereset password.</p>
