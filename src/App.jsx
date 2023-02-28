@@ -8,6 +8,8 @@ import OtpForgotPassword from './Page/Auth/OtpForgotPassword';
 import ResetPassword from './Page/Auth/ResetPassword';
 import ForgotPassword from './Page/Auth/ForgotEmail';
 import Paket from './Page/Menu/Paket';
+import DetailPacket from './Page/Detail Paket/DetailPacket';
+import About from './Page/About';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/reset-password' element={<ResetPassword />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/list-product' element={<Paket />} />
+          <Route path='/detail-paket' element={<DetailPacket />} />
+          <Route path='/about-us' element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>

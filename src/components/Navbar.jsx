@@ -10,21 +10,21 @@ const Navbar = () => {
 
   return (
     <div className=''>
-      <div className="fixed top-0 bg-gradient-to-r from-emerald-400 to-[#016b3f] shadow-xl py-0 px-4 w-screen">
+      <div className="fixed top-0 bg-gradient-to-r from-emerald-500 to-[#016b3f] shadow-xl py-0 px-4 w-screen">
         <div className="container block md:flex mx-auto py-4">
           <Logo />
           {token ? 
           <div className="hidden md:flex w-full">
-            <button className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Paket Saya</button>
-            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Kontak</button>
-            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Tentang Kami</button>
-            <button onClick={()=>{localStorage.clear(); navigate('/login')}} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Keluar</button>
+            <button className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Paket Saya</button>
+            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Kontak</button>
+            <button  onClick={()=>navigate('/about-us')} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Tentang Kami</button>
+            <button onClick={()=>{localStorage.clear(); navigate('/login')}} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Keluar</button>
           </div>
           :
           <div className="hidden md:flex w-full">
-            <button onClick={()=>navigate('/login')} className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Masuk</button>
-            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Kontak</button>
-            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Tentang Kami</button>
+            <button onClick={()=>navigate('/login')} className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Masuk</button>
+            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Kontak</button>
+            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold transition-all duration-300'>Tentang Kami</button>
           </div>
           }
         </div>
@@ -42,22 +42,18 @@ const Navbar = () => {
         </button>
       </div>
       { token ? 
-      <div className={`wrapper fixed top-[85px] grid duration-500 transition-all w-screen bg-gradient-to-r from-emerald-400 rounded-bl-xl rounded-br-xl to-[#016b3f] py-6 px-4 ${show === true ? '-mt-5 opacity-100' : "-mt-[500px] opacity-0"}`}>
+      <div className={`wrapper fixed top-[68px] grid duration-500 transition-all w-screen bg-gradient-to-r from-emerald-500 rounded-bl-xl rounded-br-xl to-[#016b3f] py-6 px-4 ${show === true ? '-mt-1 opacity-100' : "-mt-[500px] opacity-0"}`}>
         <button onClick={()=>navigate('/')} className='text-white w-1/4 mx-auto'>Beranda</button>
-        <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
-        <button onClick={()=>navigate('/')} className='text-white w-max mx-auto'>Penawaran</button>
-        <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
-        <button className='text-white w-max mx-auto'>Promo</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
         <button className='text-white w-max mx-auto'>Paket Kamu</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
-        <button className='text-white w-max mx-auto'>Tentang Kami</button>
+        <button onClick={()=>navigate('/about-us')} className='text-white w-max mx-auto'>Tentang Kami</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
         <button onClick={()=>{localStorage.clear(); navigate('/login')}} className='text-white w-max mx-auto'>Keluar</button>
       </div>
       :
-      <div className={`wrapper fixed top-[85px] grid duration-500 transition-all w-screen bg-gradient-to-r from-emerald-400 rounded-bl-xl rounded-br-xl to-[#016b3f] py-6 px-4 ${show === true ? '-mt-5 opacity-100' : "-mt-[500px] opacity-0"}`}>
-        <button onClick={()=>navigate('/regiser')} className='text-white w-1/4 mx-auto'>Register</button>
+      <div className={`wrapper fixed top-[68px] grid duration-500 transition-all w-screen bg-gradient-to-r from-emerald-400 rounded-bl-xl rounded-br-xl to-[#016b3f] py-6 px-4 ${show === true ? '-mt-5 opacity-100' : "-mt-[500px] opacity-0"}`}>
+        <button onClick={()=>navigate('/register')} className='text-white w-1/4 mx-auto'>Register</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />
         <button onClick={()=>navigate('/login')} className='text-white w-max mx-auto'>Login</button>
         <hr className='text-white border-t border-white w-1/4 mx-auto my-3' />

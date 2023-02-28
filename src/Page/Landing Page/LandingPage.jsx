@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../../components/Button'
 import Navbar from '../../components/Navbar'
 import express from '../../assets/express.png'
 import graphics from '../../assets/graphics.png'
@@ -8,21 +7,42 @@ import content from '../../assets/content marketing.jpg'
 import internet from '../../assets/internet marketing.jpg'
 import social from '../../assets/social media marketing.jpg'
 import Footer from '../../components/Footer'
-import Carousel from '../../components/Carousel'
 import ButtonWhatsapp from '../../components/ButtonWhatsapp'
 import { useNavigate } from 'react-router-dom'
+import Promo from '../../components/Promo'
 
 const LandingPage = () => {
 
+  const token = localStorage.getItem('token')
   const navigate = useNavigate()
 
   return (
     <div className=''>
-      <Carousel />
-      <div className="space-y-2 md:spacing-y-0 md:flex px-9 text-xs container md:mx-auto my-5 md:my-20">
-          <Button text='Order' width='w-5/12 md:w-2/12 md:hover:mr-10 mt-2 mx-auto md:mx-0 md:ml-auto transition-all duration-500 hover:opacity-70 hover:scale-110' />
-          <Button onClick={()=>navigate('https://wa.link/6y0gga')} text='Konsultasi' width='w-5/12 md:hover:mx-10 md:w-2/12 mx-auto md:mx-5 transition-all duration-500 hover:opacity-70 hover:scale-110' />
-          <Button onClick={()=>navigate('list-product')} text='List harga' width='w-5/12 md:w-2/12 md:hover:ml-10 mx-auto md:mx-0 md:mr-auto transition-all duration-500 hover:opacity-70 hover:scale-110' />
+      <Promo />
+      <div className="px-9 text-xs container md:mx-auto my-5 md:my-20">
+          { token ?
+          <div className='flex'>
+            <button onClick={()=>navigate('https://wa.link/6y0gga')} className='flex ml-auto mr-4 md:mr-20 hover:scale-125 hover:font-bold hover:text-emerald-800 transition-all duration-700'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 md:w-10 my-auto mr-1">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+              </svg>
+              <p className='text-lg md:text-xl my-auto'>Konsultasi</p>
+            </button>
+            <button onClick={()=>navigate('/list-product')} className='flex mr-auto ml-4 md:ml-20 hover:scale-125 hover:font-bold hover:text-emerald-800 transition-all duration-700'>
+              <p className='text-lg md:text-xl my-auto'>Daftar Paket</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 md:w-10 my-auto ml-1 md:ml-3">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+              </svg>
+            </button>
+          </div>
+          :
+          <button className='flex mx-auto hover:scale-125 hover:font-bold hover:text-emerald-800 transition-all duration-700'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 md:w-10 my-auto mr-1 md:mr-3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            <p className='text-lg md:text-xl my-auto'>Konsultasi</p>
+          </button>
+          }
       </div>
       <div className="wrapper container px-10 md:px-0 mx-auto">
         <p className='text-md md:text-3xl mb-10'>Apa saja yang bisa kami kerjakan ?</p>

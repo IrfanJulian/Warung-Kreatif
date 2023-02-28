@@ -75,9 +75,9 @@ const Register = () => {
           <div className="wrapper w-10/12 md:w-1/2 py-10 mx-auto p-5 bg-white rounded-xl mt-14 shadow-xl my-auto">
               <p className='text-2xl md:text-3xl text-[#016b3f] font-semibold underline text-center'>Daftar</p>
               <p className='text-md md:text-xl text-[#016b3f] font-medium text-center my-5'>Masukan data anda untuk mendaftar</p>
-              <Input name='name' value={form.name} onChange={handleChange} placeholder='Masukan nama lengkap' font='text-[#016b3f] text-sm md:text-lg' tittle='Nama Lengkap' width='w-11/12 mx-auto mt-10' />
-              <Input name='email' value={form.email} onChange={handleChange} placeholder='Masukan email' font='text-[#016b3f] text-sm md:text-lg' tittle='Email' width='w-11/12 mx-auto mt-5' />
-              <Input name='phone' value={form.phone} onChange={handleChange} placeholder='Masukan nomor telepon' font='text-[#016b3f] text-sm md:text-lg' tittle='Nomor Telepon' width='w-11/12 mx-auto mt-5' />
+              <Input name='name' value={form.name} onChange={handleChange} placeholder='Masukan nama lengkap' font='text-[#016b3f] text-sm md:text-lg' className='outline-none py-2 px-4 text-sm md:text-lg border-2 rounded-md w-full lowercase' tittle='Nama Lengkap' width='w-11/12 mx-auto mt-10' />
+              <Input name='email' value={form.email} onChange={handleChange} placeholder='Masukan email' font='text-[#016b3f] text-sm md:text-lg' tittle='Email' className='outline-none py-2 px-4 text-sm md:text-lg border-2 rounded-md w-full lowercase' width='w-11/12 mx-auto mt-5' />
+              <Input name='phone' value={form.phone} onChange={handleChange} placeholder='Masukan nomor telepon' font='text-[#016b3f] text-sm md:text-lg' className='outline-none py-2 px-4 text-sm md:text-lg border-2 rounded-md w-full lowercase' tittle='Nomor Telepon' width='w-11/12 mx-auto mt-5' />
               <Password name='password' value={form.password} onChange={handleChange} placeholder='Masukan password' width='w-11/12 mx-auto my-5' show={show} onClick={()=>show === true ? setShow(false) : setShow(true)} tittle='Password' />
               <Password name='password2' value={password2} onChange={(e)=>setPassword2(e.target.value)} placeholder='Masukan kembali password' width='w-11/12 mx-auto my-5' show={show} onClick={()=>show === true ? setShow(false) : setShow(true)} tittle='Konfirmasi Password' />
               <Button onClick={()=>navigate('/forgot-password')} text='Lupa Password?' width='w-max text-sm md:text-lg mx-auto my-5 hover:opacity-60' className='text-[#016b3f]' />
