@@ -13,12 +13,21 @@ const Navbar = () => {
       <div className="fixed top-0 bg-gradient-to-r from-emerald-400 to-[#016b3f] shadow-xl py-0 px-4 w-screen">
         <div className="container block md:flex mx-auto py-4">
           <Logo />
+          {token ? 
+          <div className="hidden md:flex w-full">
+            <button className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Paket Saya</button>
+            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Kontak</button>
+            <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Tentang Kami</button>
+            <button onClick={()=>{localStorage.clearItem(); navigate('/login')}} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Keluar</button>
+          </div>
+          :
           <div className="hidden md:flex w-full">
             <button onClick={()=>navigate('/login')} className='w-max h-max my-auto ml-auto text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Masuk</button>
             <button onClick={()=>navigate('/register')} className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Daftar</button>
             <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Kontak</button>
             <button className='w-max h-max my-auto ml-20 text-xl text-white hover:scale-125 hover:font-semibold hover:text-black transition-all duration-300'>Tentang Kami</button>
           </div>
+          }
         </div>
         <button onClick={()=>show === true ? setShow(false) : setShow(true)} className='absolute md:hidden top-6 text-white right-5'>
           {show === false ?
