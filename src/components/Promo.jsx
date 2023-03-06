@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 const Promo = () => {
 
     const [promo, setPromo] = useState(1)
-    console.log(promo);
 
     const handlePrev = () => {
         if(promo <= 1){
@@ -29,7 +28,7 @@ const Promo = () => {
     }, [promo])
 
   return (
-    <div className='pt-20 pb-10 flex bg-gradient-to-r from-emerald-500 to-[#016b3f] rounded-2xl'>
+    <div className='pt-20 pb-14 flex bg-gradient-to-r from-emerald-500 to-[#016b3f] rounded-2xl'>
         <button onClick={handlePrev} className='hover:scale-125 md:hover:bg-emerald-500 my-auto rounded-full text-black hover:text-white transition-all duration-500 w-max h-max ml-5'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 md:w-10 md:h-10 mr-3 md:ml-0">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
