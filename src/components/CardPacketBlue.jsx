@@ -11,7 +11,7 @@ const CardPacketBlue = () => {
         <div className="wrapper px-4">
             <p className='mt-5 text-lg'>Harga mulai dari :</p>
             <div className="wrapper -ml-4 my-1 py-2 text-white w-11/12 bg-gradient-to-r from-cyan-300 to-blue-700 rounded-tr-xl rounded-br-xl">
-                <p className='text-xl font-medium italic text-center'>Rp. 700,000</p>
+                <p className='text-xl font-medium italic text-center'><span className='line-through'>Rp. 900,000</span> 500,000</p>
             </div>
             <ol className='mt-5 text-lg'>Fitur :</ol>
             <li>1 halaman.</li>

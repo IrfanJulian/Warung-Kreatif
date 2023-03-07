@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import flyer from '../assets/GAMBAR 1.jpg'
 
 const Promo = () => {
 
@@ -28,15 +29,17 @@ const Promo = () => {
     }, [promo])
 
   return (
-    <div className='pt-20 pb-14 flex bg-gradient-to-r from-emerald-500 to-[#016b3f] rounded-2xl'>
+    <div className='pt-32 pb-14 flex bg-gradient-to-r from-emerald-500 to-[#016b3f] rounded-2xl'>
         <button onClick={handlePrev} className='hover:scale-125 md:hover:bg-emerald-500 my-auto rounded-full text-black hover:text-white transition-all duration-500 w-max h-max ml-5'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 md:w-10 md:h-10 mr-3 md:ml-0">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
         </button>
-        <div className="wrapper left-0 md:-left-2 w-3/4 md:w-1/2 mx-auto h-[25rem] bg-gradient-to-r from-emerald-100 to-emerald-200 transition-all duration-1000 ease-linear relative p-0 md:p-10 mt-10 rounded-xl">
-
-                <div className={`transition-all absolute duration-1000 top-16 md:top-12 md:left-14 px-5 py-10 rounded-xl hover:scale-110 w-full md:w-11/12 mx-auto ease-linear ${promo === 1 ? 'opacity-100' : 'opacity-0'}`}>
+        <div className="wrapper bg-white p-3 md:p-10 mx-auto w-7/12 md:w-3/12 rounded-xl h-max">
+            <img src={flyer} alt="promo" className=''  />
+        </div>
+        {/* <div className="wrapper left-0 md:-left-2 w-3/4 md:w-1/2 mx-auto h-[25rem] bg-gradient-to-r from-emerald-100 to-emerald-200 transition-all duration-1000 ease-linear relative p-0 md:p-10 mt-10 rounded-xl"> */}
+                {/* <div className={`transition-all absolute duration-1000 top-16 md:top-12 md:left-14 px-5 py-10 rounded-xl hover:scale-110 w-full md:w-11/12 mx-auto ease-linear ${promo === 1 ? 'opacity-100' : 'opacity-0'}`}>
                     <p className='md:text-3xl text-center font-semibold'>Promo Diskon 50%</p>
                     <p className='md:text-xl text-center font-medium'>Promo ini berlaku sampai dengan 30 Maret 2023!</p>
                     <p className='md:text-xl text-center text-sm mt-3 md:mt-8'>Segera dapatkan promo dari Warung Kreatif agar kamu bisa membuat Website dengan harga murah namun dengan kualitas yang tentu bukan murahan.</p>
@@ -60,8 +63,8 @@ const Promo = () => {
                     <p className='md:text-3xl text-center font-semibold'>Promo Paket Personal</p>
                     <p className='md:text-xl text-center font-medium'>Paket Personal atau custom semau kamu lagi ada promo nih!</p>
                     <p className='md:text-xl text-center text-sm mt-3 md:mt-8'>Dengan harga <span className='font-bold line-through'>Rp.17,xxx,xxx</span> <span className='font-bold'>Rp.15,xxx,xxx</span> kamu udah bisa membuat Web Custom yang kamu inginkan. Bikin Web sama kami yakin deh kamu ga akan nyesel. Harga murah tapi kualitas nya ga murahan.</p>
-                </div>
-        </div>
+                </div> */}
+        {/* </div> */}
         <button onClick={handleNext} className='hover:scale-125 md:hover:bg-[#016b3f] my-auto rounded-full text-black hover:text-white transition-all duration-500 w-max h-max mr-5'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 md:w-10 md:h-10 ml-3 md:ml-0">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

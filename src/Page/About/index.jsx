@@ -6,10 +6,31 @@ const About = () => {
   return (
     <div>
         <Navbar />
-        <div className="wrapper container mx-auto mb-10 mt-28 px-7">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit aliquid, voluptatum delectus error qui nesciunt hic asperiores corrupti officia voluptas consequatur aspernatur vero laboriosam maxime id atque dignissimos accusantium ad quasi porro sunt a. Mollitia obcaecati aliquam fugit minus deleniti excepturi facere, eveniet repellat quis reiciendis molestias veniam autem numquam debitis, quos totam quasi vero beatae nisi minima! Repellendus nulla est sit dolores laboriosam repellat iusto distinctio ea accusamus corrupti! Ducimus, corrupti! Itaque nulla asperiores ducimus dolore esse culpa eaque repudiandae, beatae sint nemo tempora ad. Vel rerum eius quam ad minima nisi aperiam a expedita ratione similique incidunt vitae accusamus iusto sit fugit officiis culpa, animi labore consequuntur, nobis nostrum ea id repudiandae perferendis. Necessitatibus, placeat? Iste cum magnam totam, repellat culpa velit eaque optio repudiandae dolor aspernatur! Alias rerum nemo dignissimos laboriosam deleniti necessitatibus accusamus iusto corrupti illum, numquam eum minus quam eaque enim eligendi nihil a aliquam libero, commodi eos at tenetur qui voluptate repellat. Expedita deleniti modi quae nemo quia dolore culpa. Tempore, dolorem commodi fugit, rem officiis consequatur quibusdam doloribus quaerat doloremque, eligendi totam. Deleniti quidem autem corporis ex cumque est tempora nemo eveniet quis officia ad eligendi dolor ipsum harum, sint adipisci id eius iure modi laboriosam aut odio. Mollitia voluptas aspernatur excepturi quis atque necessitatibus suscipit officia eaque eos quia nisi repellendus voluptatem sit voluptatum perferendis similique, nihil laudantium, veritatis ea! Amet dolor rerum atque magnam culpa dolores eaque accusamus, nulla eius repudiandae aspernatur necessitatibus facilis iure ducimus nostrum. Neque quae ipsam eveniet perspiciatis amet tempore, libero illum. Vel saepe deleniti iste. Amet debitis dicta consequatur dolores a unde neque officia non quibusdam voluptate numquam, pariatur corporis illo voluptatum, ab magnam fuga laudantium iure necessitatibus esse quis impedit quo molestiae cumque. Incidunt impedit numquam officia totam aspernatur eum tempore fugit animi explicabo, labore est quos harum obcaecati nihil nisi perferendis iure! Quae beatae accusantium vitae ex quam cum eveniet iste excepturi reprehenderit laboriosam recusandae rerum pariatur distinctio, fugit officia sequi repellendus delectus ut eaque optio possimus nesciunt dolores quos maxime! Quibusdam in voluptatum voluptate rerum necessitatibus provident quas repellat accusantium nemo sint, a beatae quos officiis tempora ad dolorem id vitae alias? Enim ad laborum rerum inventore. Quaerat quia nulla aspernatur temporibus, sit qui corrupti. Voluptas, soluta? Aperiam assumenda voluptate nemo, itaque eaque architecto distinctio ullam nobis exercitationem laborum tempora hic minima, error explicabo repellat officiis laboriosam commodi, sapiente consequatur mollitia molestiae beatae. Magnam est in ea aliquam saepe ad quisquam iure magni dolores, quam minus molestias non placeat, dolore nostrum maiores voluptatum illo, sint nesciunt nemo veniam! Omnis esse ullam magni in harum culpa itaque saepe est vitae sunt veniam deleniti odit ex dolor quo necessitatibus, nostrum amet eum ab ipsa unde odio impedit natus? Totam nemo sequi minima facere tenetur perferendis quibusdam ipsa voluptate autem? Quia debitis delectus sapiente aliquid incidunt, eligendi ducimus, dolor quaerat architecto aliquam tenetur numquam quos excepturi dicta nam asperiores praesentium doloremque consequatur fugit tempora modi id in voluptatibus quibusdam! Ad id aspernatur eaque libero reiciendis dolore odio accusamus consequatur quis veritatis, repudiandae nemo incidunt laborum quae eum voluptas iusto assumenda sunt, ea provident dolorem architecto? Veritatis, consequuntur laudantium distinctio voluptatem cum dicta provident obcaecati esse assumenda accusamus? Consectetur iusto possimus suscipit asperiores similique sint eius eos, itaque fuga saepe. Expedita harum quasi numquam aut tenetur autem nisi est id quia eum! Totam est molestiae accusantium veritatis tenetur perferendis, cum, error modi inventore ipsa odio beatae excepturi facilis enim eligendi asperiores. Optio nesciunt sequi ad et voluptate. At tempora modi, reprehenderit sapiente sed enim dicta velit placeat optio omnis deleniti quo quas possimus quisquam assumenda libero sit!</p>
+        <div className="wrapper container mx-auto mb-10 pt-28 px-7 h-full">
+          <div className="wrapper w-3/4 mx-auto">
+            <p className='text-3xl font-bold text-center'>Berikut ini sekilas profil tim kami. Jasa pembuatan Website, yang berdiri di kota Bandung </p>
+          </div>
+          <div className="wrapper my-20 w-3/4 mx-auto">
+            <p className='text-xl font-medium text-center'>Warung Kreatif</p>
+            <p className='mt-5 text-center'>Kami adalah tim atau jasa website profesional yang sudah banyak dipercaya oleh berbagai macam jenis usaha, untuk membantu memasarkan produk dengan berbasis web, Jaminan kedisiplinan, kualitas, jujur, adalah target utama kami.</p>
+          </div>
+          <div className="wrapper w-3/4 mx-auto text-center">
+            <ul className='text-xl font-medium mb-5'>Layanan kami</ul>
+            <li>Jasa Pembuatan Berbagai Jenis Website</li>
+            <li>Landing Page</li>
+          </div>
+          <div className="wrapper my-20 w-3/4 mx-auto">
+            <p className='text-xl font-medium text-center'>VISI</p>
+            <p className='mt-5 text-center'>Kami memiliki tujuan dengan adanya Warung Kreatif ini tiada lain untuk memajukan usaha yang sedang berkembang guna meningkatkan penjualan dengan cara mudah dan efektif. Yang tentunya akan menambah penghasilan lebih untuk pemilik usaha tersebut serta diharapkan menjadi perusahaan besar yang mampu mempekerjakan banyak orang.</p>
+          </div>
+          <div className="wrapper w-3/4 mx-auto">
+            <p className='text-xl font-medium text-center'>KELEBIHAN</p>
+            <p className='mt-5 text-center'>Warung kreatif jelas berbeda dengan Jasa Pembuatan Website lain, kami memberikan harga yang sangat murah di sesuaikan dengan Budget Anda. Hal itu kami terapkan untuk menjawab keluhan customer yang ingin memiliki Website premium dan Profesional. dengan harga yang terjangkau. Dengan memberikan harga murah, sisa biaya yang dikeluarkan dapat digunakan mengembangkan bisnis yang dijalani.</p>
+          </div>
         </div>
-        <Footer />
+        <div className="wrapper mt-auto">
+          <Footer />
+        </div>
     </div>
   )
 }
